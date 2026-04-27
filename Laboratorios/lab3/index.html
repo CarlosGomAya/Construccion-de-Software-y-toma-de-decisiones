@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hollow Knight</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" id="logo">Hollow Knight</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#sobre">El juego</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#reflexion">Reflexión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <p class="hero-tag">Team Cherry</p>
+      <h1>Desciende al reino<br>olvidado de Hallownest</h1>
+      <p class="hero-sub">
+        Un metroidvania 2D dibujado a mano. Explora cuevas profundas, derrota
+        bichos gigantes y descubre los secretos de un reino en ruinas.
+      </p>
+      <a href="#caracteristicas" class="btn">Conocer más</a>
+    </section>
+
+    <section class="features" id="caracteristicas">
+      <h2 class="section-title">El juego en pocas palabras</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Mundo enorme</h3>
+          <p>
+            Más de treinta zonas únicas para explorar, conectadas en un mapa
+            que se va revelando conforme avanzas. Cada rincón esconde algo.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Combate exigente</h3>
+          <p>
+            Esquiva, ataca y aprende los patrones de cada jefe. La dificultad
+            es justa pero no te perdona los errores.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Arte hecho a mano</h3>
+          <p>
+            Cada personaje, fondo y animación está dibujado a mano por Team
+            Cherry. La atmósfera es lo que más se queda contigo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <h2 class="section-title">El juego</h2>
+      <p>
+        Hollow Knight salió en 2017 desarrollado por Team Cherry, un estudio
+        independiente de tres personas en Australia. Lo que empezó como un
+        Kickstarter pequeño terminó siendo uno de los metroidvania más
+        importantes de la última década, con más de 15 millones de copias
+        vendidas y una secuela en camino.
+      </p>
+    </section>
+
+    <section id="reflexion" class="reflexion">
+      <h2 class="section-title">Reflexión</h2>
+
+      <div class="qa">
+        <h3>Diferencia entre padding y margin</h3>
+        <p>
+          El padding es el espacio dentro de la caja, entre el contenido y el borde.
+          El margin es el espacio fuera, lo que separa al elemento de los demás.
+          Si le pones fondo a un elemento, el padding se pinta y el margin no.
+        </p>
+      </div>
+
+      <div class="qa">
+        <h3>¿Por qué usar box-sizing: border-box?</h3>
+        <p>
+          Sin border-box, cuando le pones width: 300px a una caja y luego le agregas
+          padding, el ancho total termina siendo más de 300px. Eso descuadra layouts.
+          Con border-box el padding y el border ya quedan incluidos en el width, así
+          es mucho más fácil predecir el tamaño real.
+        </p>
+      </div>
+
+      <div class="qa">
+        <h3>¿Qué es mobile-first?</h3>
+        <p>
+          Es escribir primero el CSS pensando en pantallas chicas y luego agregar
+          media queries con min-width para ir añadiendo reglas en pantallas más
+          grandes. La idea es que la versión móvil sea la base y todo lo demás sume,
+          en lugar de empezar con escritorio y andar quitando cosas para móvil.
+        </p>
+      </div>
+
+      <div class="qa">
+        <h3>¿Cuándo prefiero rem sobre px?</h3>
+        <p>
+          En tipografía y espaciados, porque rem es relativo al tamaño de fuente
+          raíz y respeta la configuración de accesibilidad del navegador. Si el
+          usuario le sube el zoom o el tamaño de letra, todo escala parejo. Yo
+          dejo px solo para bordes y sombras.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Hollow Knight — Team Cherry</p>
+  </footer>
+
+</body>
+</html>
