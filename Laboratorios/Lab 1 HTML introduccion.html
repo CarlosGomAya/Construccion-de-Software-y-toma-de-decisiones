@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página personal - Introducción a Desarrollo Web con HTML5">
+    <meta name="author" content="Carlos Arturo Gómez Ayala">
+    <title>Página Personal - Carlos Arturo Gómez Ayala</title>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenidos a mi Página Personal</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#aficiones">Aficiones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#preguntas">Preguntas de la actividad</a></li>
+                <li><a href="#referencias">Referencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <article>
+                <p>Hola, mi nombre es <strong>Carlos Arturo Gómez Ayala</strong> y soy estudiante universitario del <em>Instituto Tecnológico y de Estudios Superiores de Monterrey, Campus Querétaro</em>. Curso la carrera de <strong>Ingeniería en Tecnologías Computacionales</strong> y actualmente estoy en la materia de Construcción de Software y Toma de Decisiones.</p>
+
+                <h3>Mis datos</h3>
+                <ul>
+                    <li><strong>Nombre:</strong> Carlos Arturo Gómez Ayala</li>
+                    <li><strong>Matrícula:</strong> A0171027</li>
+                    <li><strong>Correo electrónico:</strong> <a href="mailto:A0711027@tec.mx">A0711027@tec.mx</a></li>
+                    <li><strong>Universidad:</strong> ITESM - Tecnológico de Monterrey, Campus Querétaro</li>
+                    <li><strong>Carrera:</strong> Ingeniería en Tecnologías Computacionales</li>
+                </ul>
+
+                <h3>Foto de perfil</h3>
+                <figure>
+                    <img src="perfil.jpg" alt="Foto de perfil de Carlos Arturo Gómez Ayala" width="200" height="200">
+                    <figcaption>Carlos Arturo Gómez Ayala</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="proyectos">
+            <h2>Mis Proyectos</h2>
+            <p>Estos son algunos de los proyectos más importantes en los que he trabajado:</p>
+            <ol>
+                <li>
+                    <strong>AtlasGrid:</strong> dashboard con base de datos y <em>machine learning</em> que utiliza una cámara ESP32-CAM para detectar y localizar espacios vacíos, libres u ocupados dentro de un estacionamiento. El proyecto se desarrolló a escala mediante una maqueta junto con la programación correspondiente.
+                </li>
+                <li>
+                    <strong>Bases de datos para Gobierno del Estado:</strong> trabajo actual con bases de datos para el <em>Centro de Atención al Adulto Mayor "Josefa Vergara"</em> en Querétaro.
+                </li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="aficiones">
+            <h2>Aficiones</h2>
+            <p>En mi tiempo libre disfruto de actividades como:</p>
+            <ul>
+                <li>Jugar videojuegos, en especial franquicias como <strong>Pokémon</strong></li>
+                <li>Juegos de cartas como <strong>Magic: The Gathering</strong> y <strong>Riftbound</strong></li>
+                <li>Lectura</li>
+            </ul>
+
+            <h3>Tabla de actividades semanales</h3>
+            <table border="1">
+                <caption>Distribución aproximada de tiempo semanal</caption>
+                <thead>
+                    <tr>
+                        <th>Actividad</th>
+                        <th>Frecuencia</th>
+                        <th>Horas aproximadas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Clases</td>
+                        <td>Lunes a Viernes</td>
+                        <td>4 a 6 horas diarias</td>
+                    </tr>
+                    <tr>
+                        <td>Servicio social</td>
+                        <td>Semanal</td>
+                        <td>6 horas</td>
+                    </tr>
+                    <tr>
+                        <td>Estudio</td>
+                        <td>Semanal</td>
+                        <td>2 horas</td>
+                    </tr>
+                    <tr>
+                        <td>Gimnasio</td>
+                        <td>2 o 3 veces por semana</td>
+                        <td>Variable</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <p>Si quieres ponerte en contacto conmigo, llena el siguiente formulario:</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </p>
+
+                    <p>
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="1" max="120">
+                    </p>
+
+                    <p>
+                        <label for="fecha">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </p>
+
+                    <p>
+                        <label for="sitio">Tu sitio web:</label>
+                        <input type="url" id="sitio" name="sitio">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información adicional</legend>
+
+                    <p>Sexo:</p>
+                    <p>
+                        <input type="radio" id="masculino" name="sexo" value="masculino">
+                        <label for="masculino">Masculino</label>
+
+                        <input type="radio" id="femenino" name="sexo" value="femenino">
+                        <label for="femenino">Femenino</label>
+
+                        <input type="radio" id="otro" name="sexo" value="otro">
+                        <label for="otro">Otro</label>
+                    </p>
+
+                    <p>Intereses:</p>
+                    <p>
+                        <input type="checkbox" id="int1" name="intereses" value="programacion">
+                        <label for="int1">Programación</label>
+
+                        <input type="checkbox" id="int2" name="intereses" value="diseno">
+                        <label for="int2">Diseño</label>
+
+                        <input type="checkbox" id="int3" name="intereses" value="bd">
+                        <label for="int3">Bases de datos</label>
+                    </p>
+
+                    <p>
+                        <label for="pais">País:</label>
+                        <select id="pais" name="pais">
+                            <option value="">--Selecciona--</option>
+                            <option value="mx">México</option>
+                            <option value="us">Estados Unidos</option>
+                            <option value="es">España</option>
+                            <option value="ar">Argentina</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="color">Color favorito:</label>
+                        <input type="color" id="color" name="color">
+                    </p>
+
+                    <p>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="5" cols="40"></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </p>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="preguntas">
+            <h2>Preguntas de la actividad</h2>
+
+            <article>
+                <h3>1. ¿Cuál es la diferencia entre Internet y la World Wide Web?</h3>
+                <p><strong>Internet</strong> es la red mundial de redes interconectadas que permite la comunicación entre computadoras a través de protocolos como TCP/IP. La <strong>World Wide Web (WWW)</strong> es un servicio que funciona <em>sobre</em> Internet, basado en documentos de hipertexto vinculados entre sí mediante URLs y accesibles a través del protocolo HTTP/HTTPS. Es decir, Internet es la infraestructura y la Web es uno de los muchos servicios que utilizan esa infraestructura (otros servicios son el correo electrónico, FTP, etc.).</p>
+                <p>Fuente: <cite><a href="https://developer.mozilla.org/es/docs/Learn/Common_questions/What_is_the_difference_between_webpage_website_webserver_and_search_engine">MDN Web Docs</a></cite></p>
+            </article>
+
+            <article>
+                <h3>2. ¿Cuáles son las partes de un URL?</h3>
+                <p>Las partes principales de un URL son:</p>
+                <ul>
+                    <li><strong>Protocolo (esquema):</strong> ej. <code>https://</code></li>
+                    <li><strong>Dominio (host):</strong> ej. <code>www.ejemplo.com</code></li>
+                    <li><strong>Puerto:</strong> ej. <code>:443</code> (opcional)</li>
+                    <li><strong>Ruta (path):</strong> ej. <code>/ruta/recurso</code></li>
+                    <li><strong>Parámetros (query string):</strong> ej. <code>?id=123&amp;cat=4</code></li>
+                    <li><strong>Fragmento (anchor):</strong> ej. <code>#seccion</code></li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>3. ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</h3>
+                <ul>
+                    <li><strong>GET:</strong> obtiene un recurso del servidor.</li>
+                    <li><strong>HEAD:</strong> obtiene solo los encabezados de la respuesta, sin el cuerpo. Útil para verificar si un recurso existe.</li>
+                    <li><strong>POST:</strong> envía datos al servidor para crear un nuevo recurso.</li>
+                    <li><strong>PUT:</strong> reemplaza por completo un recurso existente.</li>
+                    <li><strong>PATCH:</strong> modifica parcialmente un recurso existente.</li>
+                    <li><strong>DELETE:</strong> elimina un recurso del servidor.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>4. ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña? ¿Por qué?</h3>
+                <p>Se debe utilizar el método <strong>POST</strong>, porque envía los datos en el cuerpo de la petición y no en la URL. Esto evita que información sensible como contraseñas quede expuesta en el historial del navegador, en los registros del servidor o en los marcadores. Además, POST permite enviar mayor cantidad de información que GET.</p>
+            </article>
+
+            <article>
+                <h3>5. ¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</h3>
+                <p>Se utiliza el método <strong>GET</strong>, ya que el navegador solicita al servidor el recurso (la página HTML) que corresponde al URL ingresado.</p>
+            </article>
+
+            <article>
+                <h3>6. Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa? ¿Ocurrió algún error?</h3>
+                <p>El código <strong>200 OK</strong> indica que la petición fue procesada con éxito. <em>No ocurrió ningún error</em>; la respuesta del servidor contiene el recurso solicitado.</p>
+            </article>
+
+            <article>
+                <h3>7. ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta un error 404? ¿Por qué?</h3>
+                <p><strong>Depende.</strong> El error 404 (Not Found) significa que el recurso solicitado no existe en el servidor. Si el usuario llegó al 404 porque siguió un enlace roto <em>dentro</em> del propio sitio o porque el desarrollador eliminó/movió una página sin redirigir, sí es responsabilidad del desarrollador corregirlo. Sin embargo, si el usuario simplemente escribió mal la URL, no es responsabilidad del desarrollador, aunque sí es buena práctica ofrecer una página 404 personalizada que ayude a navegar al sitio correcto.</p>
+            </article>
+
+            <article>
+                <h3>8. ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta un error 500? ¿Por qué?</h3>
+                <p><strong>Sí.</strong> El error 500 (Internal Server Error) indica que ocurrió un fallo en el lado del servidor, lo cual generalmente es responsabilidad del desarrollador o del equipo de infraestructura. Puede deberse a errores en el código, fallos de configuración, problemas con la base de datos, etc. El usuario no puede solucionarlo desde su lado.</p>
+            </article>
+
+            <article>
+                <h3>9. ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado? Menciona algunos elementos de HTML 4 desaprobados en HTML5.</h3>
+                <p>Un elemento o atributo <strong>depreciado (deprecated)</strong> es aquel que aún funciona pero cuyo uso ya no se recomienda, porque existen mejores alternativas (generalmente CSS) o porque será eliminado en futuras versiones del estándar.</p>
+                <p>Algunos elementos de HTML 4 desaprobados en HTML5 son:</p>
+                <ul>
+                    <li><code>&lt;font&gt;</code> — reemplazado por CSS</li>
+                    <li><code>&lt;center&gt;</code> — reemplazado por CSS (<code>text-align</code>)</li>
+                    <li><code>&lt;big&gt;</code> — reemplazado por CSS</li>
+                    <li><code>&lt;strike&gt;</code> — reemplazado por <code>&lt;s&gt;</code> o <code>&lt;del&gt;</code></li>
+                    <li><code>&lt;tt&gt;</code> — reemplazado por CSS o <code>&lt;code&gt;</code></li>
+                    <li><code>&lt;frame&gt;</code> y <code>&lt;frameset&gt;</code></li>
+                    <li><code>&lt;applet&gt;</code> — reemplazado por <code>&lt;object&gt;</code></li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>10. ¿Qué componentes de estructura y estilo tiene una tabla?</h3>
+                <p>Componentes de estructura:</p>
+                <ul>
+                    <li><code>&lt;table&gt;</code> — contenedor de la tabla</li>
+                    <li><code>&lt;caption&gt;</code> — título de la tabla</li>
+                    <li><code>&lt;thead&gt;</code> — encabezado</li>
+                    <li><code>&lt;tbody&gt;</code> — cuerpo</li>
+                    <li><code>&lt;tfoot&gt;</code> — pie</li>
+                    <li><code>&lt;tr&gt;</code> — fila</li>
+                    <li><code>&lt;th&gt;</code> — celda de encabezado</li>
+                    <li><code>&lt;td&gt;</code> — celda de datos</li>
+                    <li><code>&lt;colgroup&gt;</code> y <code>&lt;col&gt;</code> — agrupación de columnas</li>
+                </ul>
+                <p>El estilo se aplica mediante CSS (bordes, colores, alineación, espaciado, etc.). Atributos como <code>border</code>, <code>cellpadding</code> y <code>cellspacing</code> existían en HTML 4 pero están desaprobados en HTML5.</p>
+            </article>
+
+            <article>
+                <h3>11. ¿Cuáles son los principales controles de una forma HTML5?</h3>
+                <ul>
+                    <li><code>&lt;input&gt;</code> con tipos: text, password, email, number, date, tel, url, color, range, search, file, hidden, checkbox, radio, submit, reset, button</li>
+                    <li><code>&lt;textarea&gt;</code> — área de texto multilínea</li>
+                    <li><code>&lt;select&gt;</code> con <code>&lt;option&gt;</code> — listas desplegables</li>
+                    <li><code>&lt;button&gt;</code> — botones</li>
+                    <li><code>&lt;label&gt;</code> — etiquetas asociadas a controles</li>
+                    <li><code>&lt;fieldset&gt;</code> y <code>&lt;legend&gt;</code> — agrupación de controles</li>
+                    <li><code>&lt;datalist&gt;</code> — sugerencias para inputs</li>
+                    <li><code>&lt;output&gt;</code> — resultado de cálculos</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>12. Sobre el ciclo de vida y desarrollo de los sistemas de información</h3>
+                <p><strong>Ciclo de vida de un sistema de información:</strong> abarca todas las etapas desde que se concibe el sistema hasta que se retira. Generalmente incluye: planeación, análisis, diseño, desarrollo (implementación), pruebas, implantación, operación y mantenimiento, y finalmente el retiro o reemplazo del sistema.</p>
+                <p><strong>Ciclo de desarrollo de sistemas de información (SDLC):</strong> es la parte del ciclo de vida enfocada específicamente en la creación del sistema. Sus fases típicas son:</p>
+                <ol>
+                    <li><strong>Análisis de requerimientos:</strong> entender qué necesita el usuario.</li>
+                    <li><strong>Diseño:</strong> planear cómo se construirá el sistema.</li>
+                    <li><strong>Implementación (codificación):</strong> escribir el código.</li>
+                    <li><strong>Pruebas:</strong> verificar que todo funcione correctamente.</li>
+                    <li><strong>Despliegue:</strong> poner el sistema en producción.</li>
+                    <li><strong>Mantenimiento:</strong> corregir errores y agregar mejoras.</li>
+                </ol>
+                <p>La diferencia clave es que el <em>ciclo de vida</em> es más amplio (incluye el retiro del sistema), mientras que el <em>ciclo de desarrollo</em> se enfoca solo en la construcción y entrega.</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="referencias">
+            <h2>Referencias y proceso de aprendizaje</h2>
+            <p>Para construir esta página fui aprendiendo HTML desde cero, apoyándome en las referencias proporcionadas por los profesores y haciendo preguntas a <em>ChatGPT</em> a lo largo del proceso para entender cada parte del código.</p>
+
+            <h3>Prompts utilizados en ChatGPT</h3>
+            <ol>
+                <li>"¿Cómo se estructura un documento HTML5 desde cero? ¿Qué etiquetas básicas debo poner siempre dentro del &lt;head&gt;?"</li>
+                <li>"¿Cuál es la diferencia entre etiquetas semánticas como &lt;header&gt;, &lt;section&gt; y &lt;article&gt; comparadas con simplemente usar &lt;div&gt;? ¿Cuándo conviene usar cada una?"</li>
+                <li>"Necesito hacer un menú de navegación con enlaces internos a secciones de la misma página. ¿Cómo funcionan los anclas con # y los IDs?"</li>
+                <li>"¿Cómo creo una lista ordenada y una lista desordenada en HTML? ¿Puedo anidar listas dentro de otras?"</li>
+                <li>"Explícame cómo construir una tabla en HTML5 usando &lt;thead&gt;, &lt;tbody&gt; y &lt;tfoot&gt;. ¿Para qué sirve la etiqueta &lt;caption&gt;?"</li>
+                <li>"¿Cuáles son todos los tipos de &lt;input&gt; que existen en HTML5? Quiero usar varios en un formulario para mostrar diferentes controles."</li>
+                <li>"¿Cómo agrupo controles relacionados en un formulario? Vi algo de &lt;fieldset&gt; y &lt;legend&gt;, ¿cómo se usan?"</li>
+                <li>"¿Por qué se recomienda usar &lt;label&gt; con el atributo 'for' en lugar de solo escribir el texto al lado del input?"</li>
+                <li>"¿Cuál es la diferencia entre method='GET' y method='POST' al enviar un formulario? ¿Cuál debería usar para datos sensibles?"</li>
+                <li>"¿Qué etiquetas de HTML 4 ya están desaprobadas en HTML5? Quiero asegurarme de no usarlas en mi tarea."</li>
+                <li>"¿Cómo funciona la herramienta validator.w3.org? ¿Qué errores comunes debo revisar antes de validar mi documento?"</li>
+                <li>"Resume brevemente la diferencia entre el ciclo de vida y el ciclo de desarrollo de los sistemas de información."</li>
+            </ol>
+
+            <h3>Referencias proporcionadas por los profesores</h3>
+            <ul>
+                <li><a href="https://www.freecodecamp.org/news/http-request-methods-explained/" target="_blank">HTTP Request Methods - Get vs Put vs Post Explained with Code Examples</a> — freeCodeCamp</li>
+                <li><a href="https://www.freecodecamp.org/news/the-html-handbook/" target="_blank">The HTML Handbook</a> — freeCodeCamp</li>
+                <li><a href="https://medium.com/level-up-web/beginners-html-cheat-sheet-f9b1e3ce88a6" target="_blank">Beginner's HTML Cheat Sheet</a> — Medium / Level Up Web</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p><small>Editor HTML utilizado: <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></small></p>
+        <p><small>&copy; 2026 Carlos Arturo Gómez Ayala - ITESM Campus Querétaro</small></p>
+    </footer>
+
+</body>
+</html>
