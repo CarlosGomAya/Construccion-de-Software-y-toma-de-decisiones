@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Laboratorio - Programación Orientada a Eventos</title>
+</head>
+<body>
+    <h1>Películas Famosas</h1>
+    <ul class="list">
+        <li>Titanic</li>
+        <li>Jurassic Park</li>
+        <li>El señor de los Anillos</li>
+        <li>Star Wars</li>
+    </ul>
+
+    <p id="para1">Soy un párrafo.</p>
+    <p id="para2">Soy otro párrafo.</p>
+
+    <script>
+        // getElementById
+        const paragraph1 = document.getElementById("para1");
+        console.log(paragraph1);
+        console.log(paragraph1.textContent);
+
+        // querySelector
+        const h1Element = document.querySelector("h1");
+        console.log(h1Element);
+
+        const list = document.querySelector(".list");
+        console.log(list);
+
+        // querySelectorAll
+        const listaDeElementos = document.querySelectorAll("ul > li");
+        listaDeElementos.forEach((item) => {
+            console.log(item);
+        });
+
+        // createElement y appendChild
+        const h2Nuevo = document.createElement("h2");
+        h2Nuevo.textContent = "Elementos que se utilizan en desarrollo Web:";
+        document.body.appendChild(h2Nuevo);
+
+        let listaSinOrden = document.createElement("ul");
+        document.body.appendChild(listaSinOrden);
+
+        let elemento1Lista = document.createElement("li");
+        elemento1Lista.textContent = "HTML";
+        listaSinOrden.appendChild(elemento1Lista);
+
+        let elemento2Lista = document.createElement("li");
+        elemento2Lista.textContent = "CSS";
+        listaSinOrden.appendChild(elemento2Lista);
+
+        let elemento3Lista = document.createElement("li");
+        elemento3Lista.textContent = "JS";
+        listaSinOrden.appendChild(elemento3Lista);
+
+        // Modificar CSS con style
+        let newH3 = document.createElement("h3");
+        newH3.textContent = "Hola soy un texto en color negro";
+        document.body.appendChild(newH3);
+
+        const h3 = document.querySelector("h3");
+        h3.style.color = "blue";
+        h3.textContent = "Ohh me cambiaron a azul.";
+
+        // Eventos con addEventListener
+        let newButton = document.createElement("button");
+        newButton.textContent = "Mostrar Alerta";
+        newButton.setAttribute("id", "btn");
+        document.body.appendChild(newButton);
+
+        const button = document.getElementById("btn");
+        button.addEventListener("click", () => {
+            alert("Gracias por el click");
+        });
+    </script>
+</body>
+</html>
