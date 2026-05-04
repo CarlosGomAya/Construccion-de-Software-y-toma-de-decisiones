@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesiones y Cookies</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <main>
+        <h1>Laboratorio: Sesiones y Cookies</h1>
+
+        <% if (mensaje) { %>
+            <p class="mensaje"><%= mensaje %></p>
+        <% } %>
+
+        <section>
+            <h2>Guardar nombre</h2>
+            <form action="/guardar-nombre" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Datos guardados</h2>
+            <p><strong>Cookie nombre:</strong> <%= nombreCookie || 'No hay cookie' %></p>
+            <p><strong>Sesión nombreSesion:</strong> <%= nombreSesion || 'No hay variable de sesión' %></p>
+            <p><strong>Visitas en sesión:</strong> <%= visitas %></p>
+        </section>
+
+        <section>
+            <h2>Pruebas</h2>
+            <a href="/visita">Agregar visita</a>
+            <a href="/test_cookie">Ver cookie</a>
+            <a href="/test_session">Ver sesión</a>
+            <a href="/logout">Cerrar sesión</a>
+        </section>
+    </main>
+</body>
+</html>

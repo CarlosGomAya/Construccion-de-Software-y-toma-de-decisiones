@@ -1,0 +1,3 @@
+Se llevaba una cronología de laboratorios, sin embargo, esta se dejo el seguimiento al tener en dashboard la practica o lab17 AJAX como lab24. Por lo que AJAX de momento es el lab 17.
+
+Esto recorrió los laboratorios "Lab Manejo de sesiones y cookies" y "Lab Autentificación" además de los siguientes, por lo que se anotaran con esos nombres y se seguirá la cronología en el lab18 que es 'Lab Autentificación' así registrado en mensaje de Discord. Esto se debió a las practicas 15 y 16 que se explican con el mensaje del profesor 'recuerden registrear el lab 15 y 16 (TODOS) que fue la instalaciión de Postgresql y el alta en supabase'
