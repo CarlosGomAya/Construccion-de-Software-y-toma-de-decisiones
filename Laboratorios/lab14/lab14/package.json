@@ -1,0 +1,15 @@
+{
+  "name": "lab17bd-supabase",
+  "version": "1.0.0",
+  "description": "Lab 14 - Interaccion con la base de datos (PostgreSQL + Supabase)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "pg": "^8.11.5"
+  }
+}
