@@ -1,0 +1,17 @@
+{
+  "name": "lab11-express",
+  "version": "1.0.0",
+  "description": "Lab 11 Express - Catálogo de libros",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch index.js",
+    "start": "node index.js"
+  },
+  "author": "Carlitos",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}
