@@ -16,3 +16,5 @@ git commit -m ""   # registrar un punto de control con descripción y el mensaje
 git push           # subir cambios al repositorio remoto
 
 Este repositorio es de carácter académico y forma parte del trabajo individual del semestre.
+
+Notas: Muchos de los nombres pueden variar ligeraamente respecto a lo presentado en el calendario, sin embargo, se encuentran en sus espacios correspondientes y realizados.
