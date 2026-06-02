@@ -1,0 +1,25 @@
+{
+  "name": "rpg-pruebas",
+  "version": "1.0.0",
+  "description": "Proyecto base para aprender pruebas de software con un RPG por turnos - TC2005B",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "start": "node src/index.js",
+    "ui": "npx serve public"
+  },
+  "keywords": [
+    "pruebas",
+    "testing",
+    "jest",
+    "rpg",
+    "tc2005b"
+  ],
+  "author": "TC2005B",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

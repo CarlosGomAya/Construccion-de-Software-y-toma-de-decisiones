@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPG - Combate por turnos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="contenedor">
+    <header>
+      <h1>⚔️ Reino de las Pruebas</h1>
+    </header>
+
+    <section class="arena">
+      <div class="luchador" id="panel-personaje">
+        <h2 id="nombre-personaje">Aria</h2>
+        <div class="stats">
+          <p>Nivel: <span id="nivel-personaje">1</span></p>
+          <p>Vida: <span id="vida-personaje">100</span> / <span id="vida-max-personaje">100</span></p>
+          <div class="barra-vida">
+            <div class="barra-vida-fill" id="barra-personaje"></div>
+          </div>
+          <p>XP: <span id="xp-personaje">0</span> / <span id="xp-siguiente">100</span></p>
+        </div>
+      </div>
+
+      <div class="luchador" id="panel-enemigo">
+        <h2 id="nombre-enemigo">Goblin</h2>
+        <div class="stats">
+          <p>Vida: <span id="vida-enemigo">40</span> / <span id="vida-max-enemigo">40</span></p>
+          <div class="barra-vida">
+            <div class="barra-vida-fill" id="barra-enemigo"></div>
+          </div>
+          <p class="atributos">Ataque: <span id="atk-enemigo">10</span> | Defensa: <span id="def-enemigo">3</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="acciones">
+      <button id="btn-atacar">Atacar</button>
+      <button id="btn-curar">Curar</button>
+      <button id="btn-huir">Huir</button>
+    </section>
+
+    <section class="bitacora">
+      <h3>Bitácora de combate</h3>
+      <ul id="log"></ul>
+    </section>
+
+    <button id="btn-nuevo" class="btn-nuevo">Nuevo combate</button>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
