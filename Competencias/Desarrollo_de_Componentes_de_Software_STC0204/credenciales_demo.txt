@@ -1,0 +1,3 @@
+Oficial: demo@sofom.mx / demo123 
+Analista: analista@sofom.mx / analista123 
+Cliente: juan.perez@email.com / cliente123
